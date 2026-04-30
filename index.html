@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVita - Growing the Future of Farming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="languageSwitch">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="gu">ગુજરાતી</option>
+        </select>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>AgroVita</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in" data-lang="hero-title">Growing the Future of Farming</h1>
+            <p class="hero-subtitle fade-in" data-lang="hero-subtitle">High-quality seeds and sustainable solutions for modern agriculture</p>
+            <a href="#products" class="cta-button fade-in" data-lang="cta-explore">Explore Products</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="about-title">About AgroVita</h2>
+                <p class="section-subtitle" data-lang="about-subtitle">Empowering farmers with innovative agricultural solutions</p>
+            </div>
+            <div class="about-content">
+                <p class="about-text" data-lang="about-text">
+                    At AgroVita, we are committed to revolutionizing agriculture through cutting-edge research and sustainable practices. 
+                    With over two decades of experience, we provide farmers with premium quality seeds, fertilizers, and crop protection 
+                    solutions that maximize yield while preserving the environment.
+                </p>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 data-lang="feature-innovation">Innovation</h3>
+                        <p data-lang="feature-innovation-text">Research-driven solutions for modern farming challenges</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 data-lang="feature-quality">Quality</h3>
+                        <p data-lang="feature-quality-text">Premium products tested for superior performance</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 data-lang="feature-trust">Trust</h3>
+                        <p data-lang="feature-trust-text">Trusted by thousands of farmers nationwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="products-title">Our Products</h2>
+                <p class="section-subtitle" data-lang="products-subtitle">Comprehensive solutions for every farming need</p>
+            </div>
+            
+            <!-- Product Filter -->
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all" data-lang="filter-all">All Products</button>
+                <button class="filter-btn" data-filter="seeds" data-lang="filter-seeds">Seeds</button>
+                <button class="filter-btn" data-filter="fertilizers" data-lang="filter-fertilizers">Fertilizers</button>
+                <button class="filter-btn" data-filter="crop-protection" data-lang="filter-crop">Crop Protection</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Seeds -->
+                <div class="product-card" data-category="seeds">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=500" alt="Hybrid Seeds">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-hybrid-seeds">Hybrid Seeds</h3>
+                        <p data-lang="product-hybrid-desc">High-yield hybrid varieties for optimal growth</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500" alt="Vegetable Seeds">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-vegetable-seeds">Vegetable Seeds</h3>
+                        <p data-lang="product-vegetable-desc">Premium vegetable seeds for commercial farming</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=500" alt="Cereal Seeds">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-cereal-seeds">Cereal Seeds</h3>
+                        <p data-lang="product-cereal-desc">Disease-resistant cereal crop varieties</p>
+                    </div>
+                </div>
+
+                <!-- Fertilizers -->
+                <div class="product-card" data-category="fertilizers">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500" alt="Organic Fertilizers">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-organic-fertilizer">Organic Fertilizers</h3>
+                        <p data-lang="product-organic-desc">100% natural soil enrichment solutions</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fertilizers">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=500" alt="NPK Fertilizers">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-npk-fertilizer">NPK Fertilizers</h3>
+                        <p data-lang="product-npk-desc">Balanced nutrient formulations for all crops</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fertilizers">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=500" alt="Micronutrients">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-micronutrients">Micronutrients</h3>
+                        <p data-lang="product-micro-desc">Essential trace elements for healthy crops</p>
+                    </div>
+                </div>
+
+                <!-- Crop Protection -->
+                <div class="product-card" data-category="crop-protection">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500" alt="Bio Pesticides">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-bio-pesticides">Bio Pesticides</h3>
+                        <p data-lang="product-bio-desc">Eco-friendly pest management solutions</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="crop-protection">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=500" alt="Fungicides">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-fungicides">Fungicides</h3>
+                        <p data-lang="product-fungi-desc">Advanced disease control formulations</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="crop-protection">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?w=500" alt="Herbicides">
+                        <div class="product-overlay">
+                            <button class="product-btn" data-lang="btn-learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="product-herbicides">Herbicides</h3>
+                        <p data-lang="product-herb-desc">Selective weed control for better yields</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="why-title">Why Choose AgroVita</h2>
+                <p class="section-subtitle" data-lang="why-subtitle">Your trusted partner in agricultural excellence</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-lang="benefit-yield">High Yield</h3>
+                    <p data-lang="benefit-yield-text">Our products consistently deliver 30-40% higher yields compared to conventional alternatives</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 data-lang="benefit-research">Research Based</h3>
+                    <p data-lang="benefit-research-text">Backed by extensive R&D and field trials across diverse climatic conditions</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-lang="benefit-trusted">Trusted by Farmers</h3>
+                    <p data-lang="benefit-trusted-text">Over 50,000 satisfied farmers across the country rely on our products</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-lang="benefit-sustainable">Sustainable</h3>
+                    <p data-lang="benefit-sustainable-text">Environmentally responsible solutions that protect soil health and biodiversity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="testimonials-title">What Farmers Say</h2>
+                <p class="section-subtitle" data-lang="testimonials-subtitle">Real stories from real farmers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-lang="testimonial-1-text">"AgroVita's hybrid seeds transformed my farm. I saw a 35% increase in yield in just one season. Their support team is always helpful."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 data-lang="testimonial-1-name">Rajesh Kumar</h4>
+                            <p data-lang="testimonial-1-location">Punjab</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-lang="testimonial-2-text">"The organic fertilizers are excellent. My soil quality improved significantly, and crops are healthier than ever before."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 data-lang="testimonial-2-name">Priya Patel</h4>
+                            <p data-lang="testimonial-2-location">Gujarat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-lang="testimonial-3-text">"Best quality products at reasonable prices. The bio pesticides work wonderfully without harming the environment."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 data-lang="testimonial-3-name">Suresh Reddy</h4>
+                            <p data-lang="testimonial-3-location">Karnataka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="gallery-title">Our Impact</h2>
+                <p class="section-subtitle" data-lang="gallery-subtitle">Witness the transformation in fields across the nation</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800" alt="Farming">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800" alt="Crops">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800" alt="Agriculture">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="Fields">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800" alt="Harvest">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800" alt="Farming">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="contact-title">Get In Touch</h2>
+                <p class="section-subtitle" data-lang="contact-subtitle">We're here to help you grow</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name" data-lang="form-name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email" data-lang="form-email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" required>
+                            <label for="phone" data-lang="form-phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message" data-lang="form-message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn" data-lang="form-submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4 data-lang="info-address-title">Address</h4>
+                            <p data-lang="info-address">123 Agriculture Park, Green Valley, Mumbai - 400001</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4 data-lang="info-phone-title">Phone</h4>
+                            <p>+91 99999 99999</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4 data-lang="info-email-title">Email</h4>
+                            <p>info@agrovita.com</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.082177513217388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>AgroVita</span>
+                    </div>
+                    <p data-lang="footer-tagline">Growing the Future of Farming</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-quick-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-lang="footer-home">Home</a></li>
+                        <li><a href="#about" data-lang="footer-about">About Us</a></li>
+                        <li><a href="#products" data-lang="footer-products">Products</a></li>
+                        <li><a href="#contact" data-lang="footer-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-products-title">Products</h4>
+                    <ul>
+                        <li><a href="#products" data-lang="footer-seeds">Seeds</a></li>
+                        <li><a href="#products" data-lang="footer-fertilizers">Fertilizers</a></li>
+                        <li><a href="#products" data-lang="footer-crop-protection">Crop Protection</a></li>
+                        <li><a href="#products" data-lang="footer-micronutrients">Micronutrients</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-support">Support</h4>
+                    <ul>
+                        <li><a href="#" data-lang="footer-faq">FAQ</a></li>
+                        <li><a href="#" data-lang="footer-shipping">Shipping</a></li>
+                        <li><a href="#" data-lang="footer-returns">Returns</a></li>
+                        <li><a href="#" data-lang="footer-privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgroVita. <span data-lang="footer-rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-btn" target="_blank" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
